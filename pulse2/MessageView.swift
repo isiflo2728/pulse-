@@ -9,10 +9,20 @@ import SwiftUI
 
 struct MessageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack{
+            Form{
+                Section{
+                    Text("Hello World!!")
+                }
+            }
+            .navigationTitle("Messages")
+            
+        }
+        
+        
     }
 }
-
 #Preview {
     MessageView()
 }
